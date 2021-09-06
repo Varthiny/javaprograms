@@ -4,10 +4,7 @@ public class SelectionSort {
    public static void main(String args[]) { 
 	   Random ra = new Random();
 	   
-	   //int j =ra.nextInt();
-	   //System.out.println("generate:" + j);
 	   
-	   //int numbers=ra.nextInt();
 	   int arraySize=1000000;
 	   int []numbers;
 	   numbers=new int[arraySize];
@@ -15,12 +12,10 @@ public class SelectionSort {
 		   numbers[i]=ra.nextInt();
 		   
 	   }
-	   //System.out.println("unsorted numbers");
-	   //printArray(numbers);
+	   System.out.println("unsorted numbers");
+	   printArray(numbers);
 	   
-	   //int []numbers =ra.nextArray{10000};
 	   
-	   //System.out.println(numbers);
 	   //int []numbers= {1,9,7,4,5};
 	 long startingtime= System.currentTimeMillis();
 	  
