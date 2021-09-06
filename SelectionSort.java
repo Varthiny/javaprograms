@@ -1,12 +1,42 @@
-  
-  
+import java.util.Random;
 public class SelectionSort {
 	
    public static void main(String args[]) { 
-	   int []numbers= {10,5,3,7,2};
+	   Random ra = new Random();
 	   
-	   sort(numbers);
-	   printArray(numbers);
+	   //int j =ra.nextInt();
+	   //System.out.println("generate:" + j);
+	   
+	   //int numbers=ra.nextInt();
+	   int arraySize=1000000;
+	   int []numbers;
+	   numbers=new int[arraySize];
+	   for(int i=0; i<arraySize; i++) {
+		   numbers[i]=ra.nextInt();
+		   
+	   }
+	   //System.out.println("unsorted numbers");
+	   //printArray(numbers);
+	   
+	   //int []numbers =ra.nextArray{10000};
+	   
+	   //System.out.println(numbers);
+	   //int []numbers= {1,9,7,4,5};
+	 long startingtime= System.currentTimeMillis();
+	  
+	sort(numbers);
+	long endingtime= System.currentTimeMillis();
+	System.out.print("startingtime=");
+	System.out.println(startingtime);
+	System.out.print("endingtime=");
+	System.out.println(endingtime);
+	
+	
+	System.out.print("duration=");
+	System.out.print(endingtime-startingtime);
+	System.out.println();
+	//System.out.println("sorted numbers");
+	//printArray(numbers);
 	   
    }
    
