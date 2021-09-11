@@ -1,27 +1,26 @@
 import java.util.Scanner;
  
-class DiscountPrice
-{
-	public static void main(String args[])
-	{
- 
-	double  discount,amount,listedprice,s;
+public class DiscountPrice {
+
+	public static void main(String args[]) {
+	
+	double  listedPrice,discountPercentage,finalAmount,percentageToNumber;
 	
 	Scanner sc=new Scanner(System.in);
 	
-	System.out.println("enter listedprice ");	
+	System.out.println("Enter listedprice");	
                
-	listedprice=sc.nextDouble();
+	listedPrice=sc.nextDouble();
  
-        System.out.println("enter discount percentage ");	
+        System.out.println("Enter discount percentage ");	
                
-	discount=sc.nextDouble();			
+	discountPercentage=sc.nextDouble();			
 	
-        s=100-discount;
+        percentageToNumber=100-discountPercentage;
  
-	amount= (s*listedprice)/100;
+	finalAmount= (percentageToNumber*listedPrice)/100; 
  
-	System.out.println("amount after discount="+amount);
+	System.out.println("Amount after discount="+finalAmount);
  
 	}
 }
