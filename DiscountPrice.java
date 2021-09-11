@@ -4,23 +4,23 @@ public class DiscountPrice {
 
 	public static void main(String args[]) {
 	
-	double  listedPrice,discountPercentage,finalAmount,percentageToNumber;
+	double  listedPrice,discountPercentage,percentageToRupees;
 	
 	Scanner sc=new Scanner(System.in);
 	
 	System.out.println("Enter listedprice");	
                
-	listedPrice=sc.nextDouble();
+		listedPrice=sc.nextDouble();
  
-        System.out.println("Enter discount percentage ");	
+    System.out.println("Enter discount percentage ");	
                
-	discountPercentage=sc.nextDouble();			
+		discountPercentage=sc.nextDouble();			
 	
-        percentageToNumber=100-discountPercentage;
+    percentageToRupees= (listedPrice*discountPercentage)/100; 
  
-	finalAmount= (percentageToNumber*listedPrice)/100; 
- 
-	System.out.println("Amount after discount="+finalAmount);
+	System.out.print("Amount after discount=");
+	System.out.print(listedPrice-percentageToRupees);
+	
  
 	}
 }
