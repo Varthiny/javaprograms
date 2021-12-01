@@ -15,7 +15,7 @@ public class Employee {
 		
 	}
 	public void calSalary() {
-		double sal=basicPay+basicPay+55/100;
+		double sal=basicPay+basicPay*55/100;
 		System.out.println("Salary="+sal);
 		
 	}
