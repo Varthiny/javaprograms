@@ -8,7 +8,7 @@ public class TechEmp extends Employee {
 	
 	@Override
 	public void calSalary() {
-		double sal=basicPay+basicPay+55/100+bonus;
+		double sal=basicPay+basicPay*55/100+bonus;
 		System.out.println("Salary="+sal);
 	}
 	
